@@ -1,3 +1,17 @@
+---
+name: Garuda
+projectID: Garuda
+tagline: A simple theme for GitHub Pages
+url: http://idered.github.com/Garuda
+description: A simple theme for GitHub Pages
+
+author: Kasper Mikiewicz
+githubID: Idered
+twitterID: Idered
+branchID: OGAnxiNJj_M
+gplusID: 116964578938339291040
+googleAnalyticsID: UA-18366146-6
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +24,9 @@
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//platform.twitter.com">
 
-	<title>Garuda</title>
+	<title>{{page.name}} - {{page.description}}</title>
 
-	<meta name="description" content="A simple theme for GitHub Pages" />
+	<meta name="description" content="{{page.description}}" />
 
 	<link rel="stylesheet" href="ui/style.css">
 
@@ -20,39 +34,39 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,300,400' rel='stylesheet' type='text/css'>
 
 	<!-- @see codular.com/google-author-image -->
-	<link rel="author" href="https://plus.google.com/116964578938339291040/posts">
+	<link rel="author" href="https://plus.google.com/{{page.gplusID}}/posts">
 
 	<!-- @see ogp.me -->
-	<meta property="og:title" content="Garuda" />
+	<meta property="og:title" content="{{page.name}}" />
 	<meta property="og:type" content="website" />
-	<meta property="og:description" content="A simple theme for GitHub Pages" />
-	<meta property="og:url" content="http://idered.github.com/Garuda">
+	<meta property="og:description" content="{{page.description}}" />
+	<meta property="og:url" content="{{page.url}}">
 
 	<!-- @see dev.twitter.com/docs/cards -->
-	<meta property="twitter:title" content="Garuda">
-	<meta property="twitter:creator" content="@Idered">
+	<meta property="twitter:title" content="{{page.name}}">
+	<meta property="twitter:creator" content="@{{page.twitterID}}">
 	<meta property="twitter:card" content="summary">
-	<meta property="twitter:description" content="A simple theme for GitHub Pages">
-	<meta property="twitter:url" content="http://idered.github.com/Garuda">
+	<meta property="twitter:description" content="{{page.description}}">
+	<meta property="twitter:url" content="{{page.url}}">
 </head>
 <body>
 
 <div class="main wrapper">
 
 	<header class="page-head">
-		<h1 class="site-name"><a href="http://idered.github.com/Garuda" rel="index">Garuda</a></h1>
-		<h2 class="site-tagline">A simple theme for GitHub Pages</h2>
+		<h1 class="site-name"><a href="{{page.url}}" rel="index">{{page.name}}</a></h1>
+		<h2 class="site-tagline">{{page.tagline}}</h2>
 	</header>
 	<!-- /.page-head -->
 
 	<div class="share">
 		<!-- @see ghbtns.com -->
-		<iframe src="http://ghbtns.com/github-btn.html?user=Idered&repo=Garuda&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="120" height="20"></iframe>
-		<iframe src="http://ghbtns.com/github-btn.html?user=Idered&repo=Garuda&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="120" height="20"></iframe>
+		<iframe src="http://ghbtns.com/github-btn.html?user={{page.githubID}}&repo={{page.projectID}}&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="120" height="20"></iframe>
+		<iframe src="http://ghbtns.com/github-btn.html?user={{page.githubID}}&repo={{page.projectID}}&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="120" height="20"></iframe>
 		<!-- @see dev.twitter.com/docs/tweet-button -->
-		<a href="https://twitter.com/share" class="twitter-share-button" data-text="Garuda - Simple github page theme" data-via="Idered">Tweet</a>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-text="{{page.projectID}} - {{page.description}}" data-via="{{page.twitterID}}">Tweet</a>
 		<!-- @see dev.twitter.com/docs/follow-button -->
-		<a href="https://twitter.com/Idered" class="twitter-follow-button" data-show-count="false">Follow @Idered</a>
+		<a href="https://twitter.com/{{page.twitterID}}" class="twitter-follow-button" data-show-count="false">Follow @{{page.twitterID}}</a>
 	</div>
 	<!-- /.share -->
 
@@ -62,8 +76,8 @@
 	</p>
 
 	<p class="cf">
-		<a class="btn btn--primary btn--half" href="https://github.com/Idered/Garuda">View on GitHub</a>
-		<a class="btn btn--primary btn--half" href="https://github.com/Idered/Garuda/zipball/master">Download</a>
+		<a class="btn btn--primary btn--half" href="https://github.com/{{page.githubID}}/{{page.projectID}}">View on GitHub</a>
+		<a class="btn btn--primary btn--half" href="https://github.com/{{page.githubID}}/{{page.projectID}}/zipball/master">Download</a>
 	</p>
 
 	<!-- @see rawgithub.com -->
@@ -116,7 +130,7 @@
 
 	<h3><a href="#license" name="license">License</a></h3>
 	<p><b>MIT Licensing</b></p>
-	<p>Copyright (c) 2013 Kasper Mikiewicz</p>
+	<p>Copyright (c) 2013 {{page.author}}</p>
 	<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 	<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 	<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
@@ -126,8 +140,7 @@
 		<h3><a name="discussion" href="#discussion">Discussion</a></h3>
 		<p>Have a question, feedback or just want to say thanks? Go on :)</p>
 
-		<script type="text/javascript" src="http://embed-script.branch.com/assets/embed/embed.m.js?body=0" data-branch-embedid="OGAnxiNJj_M" ></script>
-		<noscript><a href="http://branch.com/b/garuda">Garuda</a></noscript>
+		<script type="text/javascript" src="http://embed-script.branch.com/assets/embed/embed.m.js?body=0" data-branch-embedid="{{page.branchID}}" ></script>
 	</div>
 	<!-- /.discussion -->
 
@@ -138,7 +151,7 @@
 	var scripts = {
 		'twitter-wjs'   : '//platform.twitter.com/widgets.js',
 		'analytics'     : ('https:'==location.protocol?'//ssl':'//www') + '.google-analytics.com/ga.js'
-	}, script, _gaq=[['_setAccount','UA-XXXXXX-X'],['_trackPageview']];
+	}, script, _gaq=[['_setAccount','{{page.googleAnalyticsID}}'],['_trackPageview']];
 
 	for (var id in scripts) {
 		script = document.createElement('script'); script.src = scripts[id];
