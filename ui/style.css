@@ -1,0 +1,636 @@
+/* Garuda 1.0.0 | MIT License | git.io/garuda */
+
+/*----------------------------------------------------------------------------*\
+   $NORMALIZE normalize.css v2.1.0 | MIT License | git.io/normalize
+\*----------------------------------------------------------------------------*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden] {
+	display: none;
+}
+
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, serif;
+	font-size: 1em;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+q {
+	quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 0;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0;
+}
+
+button,
+input {
+	line-height: normal;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*----------------------------------------------------------------------------*\
+	$BASE
+\*----------------------------------------------------------------------------*/
+
+html {
+	-webkit-font-smoothing: antialiased;
+	font: 300 .95em/1.5 "Open Sans", sans-serif;
+	background-color: #fff;
+	color: #333;
+}
+
+
+/*----------------------------------------------------------------------------*\
+	$LINKS
+\*----------------------------------------------------------------------------*/
+
+a {
+	color: #e14a42;
+	text-decoration: none;
+}
+
+a:focus,
+a:active,
+a:hover {
+	outline: 0;
+	color: #333;
+}
+
+
+/*----------------------------------------------------------------------------*\
+	$BUTTONS | github.com/csswizardry/beautons
+\*----------------------------------------------------------------------------*/
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	font-family: inherit;
+	font-size: 100%;
+	cursor: pointer;
+	border: none;
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 3;
+	padding-right: 1em;
+	padding-left: 1em;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.btn,
+.btn:hover {
+	text-decoration: none;
+}
+
+.btn:active,
+.btn:focus {
+	outline: none;
+	box-shadow: 0 0 30px rgba(0,0,0, .2) inset;
+}
+
+/* $SIZES
+\*------------------------------------*/
+.btn--small {
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	line-height: 1.4;
+}
+
+.btn--large {
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+	line-height: 2.2;
+}
+
+.btn--huge {
+	padding-right: 2em;
+	padding-left: 2em;
+	line-height: 4;
+}
+
+.btn--full {
+	width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.btn--half {
+	width: 48%;
+	margin: 0 1%;
+	padding-right: 0;
+	padding-left: 0;
+	float: left;
+}
+
+/* $FONT-SIZES
+\*------------------------------------*/
+.btn--alpha {
+	font-size: 3em;
+}
+
+.btn--beta {
+	font-size: 2.5em;
+}
+
+.btn--gamma {
+	font-size: 2em;
+}
+
+.btn--delta {
+	font-size: 1.55em;
+}
+
+.btn--epsilon {
+	font-size: 1.4em;
+}
+
+.btn--zeta {
+	font-size: 1.125em;
+}
+
+.btn--natural {
+	font-size: inherit;
+	line-height: inherit;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+}
+
+/* $FUNCTIONS
+\*------------------------------------*/
+.btn--primary {
+	color: #fff;
+	background-color: #e14a42;
+}
+
+.btn--primary:hover {
+	color: #fff;
+	background: #e6674a;
+}
+
+.btn--secondary {}
+.btn--secondary:hover {}
+
+.btn--tertiary {}
+.btn--tertiary:hover {}
+
+.btn--positive {
+	background-color: #4A993E;
+	color: #fff;
+}
+
+.btn--negative {
+	background-color: #b33630;
+	color: #fff;
+}
+
+.btn--inactive,
+.btn--inactive:hover,
+.btn--inactive:active,
+.btn--inactive:focus {
+	background-color: #ddd;
+	color: #777;
+	cursor: text;
+}
+
+/* $STYLES
+\*------------------------------------*/
+
+.btn--soft {
+	border-radius: 200px;
+}
+
+.btn--hard {
+	border-radius: 0;
+}
+
+
+/*----------------------------------------------------------------------------*\
+	$TYPOGRAPHY
+\*----------------------------------------------------------------------------*/
+
+h1, h2, h3,
+h4, h5, h6 {
+	font-family: Merriweather, serif;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+
+/*----------------------------------------------------------------------------*\
+	$CODE
+\*----------------------------------------------------------------------------*/
+
+pre, code, kbd, samp,
+pre textarea {
+	font-family: Monaco, 'Andale Mono', 'Courier New', monospace;
+}
+
+pre,
+pre textarea {
+	white-space: pre;
+	word-wrap: normal;
+	overflow: auto;
+}
+
+code, pre {
+	padding: 0 3px 2px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px
+}
+
+code {
+	background-color:#fee9cc;
+	color:rgba(0,0,0,0.75);
+	padding:1px 3px;
+}
+
+pre {
+	border: 1px solid #efefef;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: .9em;
+	padding: .5em;
+	overflow: auto;
+}
+
+pre code {
+	background: transparent;
+	display: block;
+}
+
+pre code,
+pre textarea {
+	margin: 0;
+	padding: 0;
+}
+
+pre textarea {
+	background: transparent;
+	overflow: hidden;
+	display: block;
+	line-height: inherit;
+	border: none;
+	width: 100%;
+	color: #777;
+	resize: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+pre textarea:focus { outline: none; }
+
+/* Google Prettify */
+.com { color: #93a1a1; }
+.lit { color: #195f91; }
+.pun, .opn, .clo { color: #93a1a1; }
+.fun { color: #dc322f; }
+.str, .atv { color: #268bd2; }
+.kwd, .tag { color: #195f91; }
+.typ, .atn, .dec, .var { color: #CB4B16; }
+.pln { color: #93a1a1; }
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin: 0; }
+ol.linenums li {
+  color: #ccc;
+  line-height: 1;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+
+/*----------------------------------------------------------------------------*\
+	$LAYOUT
+\*----------------------------------------------------------------------------*/
+
+.wrapper {
+	max-width: 35em;
+	margin: 0 auto;
+}
+
+.main:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+
+/*----------------------------------------------------------------------------*\
+	$HEADER
+\*----------------------------------------------------------------------------*/
+
+.page-head {
+	padding: 2em 0;
+	border-bottom: 1px solid #efefef;
+}
+
+.site-name,
+.site-tagline {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.site-name {
+	font-size: 2em;
+}
+
+.site-tagline {
+	color: #777;
+	font: 300 1.3em/1 "Open Sans", sans-serif;
+}
+
+.site-tagline:before {
+	content: '|';
+	margin: -2px .5em 0 .5em;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.share {
+	margin-top: 1.3em;
+	padding-bottom: 1.3em;
+	text-align: center;
+	border-bottom: 1px solid #efefef;
+}
+
+.share > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*----------------------------------------------------------------------------*\
+	$CONTENT
+\*----------------------------------------------------------------------------*/
+
+.discussion {
+	margin: 3em auto;
+}
+
+
+/*----------------------------------------------------------------------------*\
+	$HELPERS
+\*----------------------------------------------------------------------------*/
+
+/* Clearfix
+\*------------------------------------*/
+.cf:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+/* Anchor
+\*------------------------------------*/
+[href^="#"] {
+	position: relative;
+	color: inherit;
+}
+
+[href^="#"]:hover {
+	color: #e14a42;
+}
+
+[href^="#"]:hover:before {
+	content: '#';
+	right: 100%;
+	position: absolute;
+	margin-right: .2em;
+}
+
+
+/*----------------------------------------------------------------------------*\
+	$MEDIA-QUERIES
+\*----------------------------------------------------------------------------*/
+
+
+/* Only Phones and Tablets (Portrait) */
+@media (max-width: 959px) {
+
+	.wrapper {
+		padding: 0 1.5em;
+	}
+
+}
+
+/* Only Tablets (Portrait) */
+@media (min-width: 768px) and (max-width: 959px) {}
+
+/* Only Phones */
+@media (max-width: 767px) {
+
+	.page-head {
+		text-align: center;
+	}
+
+	.site-tagline:before {
+		content: none;
+	}
+
+	.share {
+		display: none;
+	}
+
+}
+
+/* Only Phones (Landscape) */
+@media (min-width: 480px) and (max-width: 767px) {}
+
+/* Only Phones (Portrait) */
+@media (max-width: 479px) {
+
+	.btn--half {
+		display: block;
+		float: none;
+		width: auto;
+		margin-top: 1em;
+	}
+
+}

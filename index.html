@@ -1,74 +1,166 @@
+---
+name: Garuda
+projectID: Garuda
+tagline: A simple theme for GitHub Pages
+url: http://idered.github.com/Garuda
+description: A simple theme for GitHub Pages
+
+author: Kasper Mikiewicz
+githubID: Idered
+twitterID: Idered
+branchID: OGAnxiNJj_M
+gplusID: 116964578938339291040
+googleAnalyticsID: UA-18366146-6
+---
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Garuda : A simple theme for GitHub Pages" />
+	<!-- @see developer.mozilla.org/en-US/docs/Controlling_DNS_prefetching -->
+	<link rel="dns-prefetch" href="//p.twitter.com">
+	<link rel="dns-prefetch" href="//cdn.api.twitter.com">
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//platform.twitter.com">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	<title>{{page.name}} - {{page.description}}</title>
 
-    <title>Garuda</title>
-  </head>
+	<meta name="description" content="{{page.description}}" />
 
-  <body>
+	<link rel="stylesheet" href="_ui/style.css">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Idered/Garuda">View on GitHub</a>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,300,400' rel='stylesheet' type='text/css'>
 
-          <h1 id="project_title">Garuda</h1>
-          <h2 id="project_tagline">A simple theme for GitHub Pages</h2>
+	<!-- @see codular.com/google-author-image -->
+	<link rel="author" href="https://plus.google.com/{{page.gplusID}}/posts">
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Idered/Garuda/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Idered/Garuda/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+	<!-- @see ogp.me -->
+	<meta property="og:title" content="{{page.name}}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="{{page.description}}" />
+	<meta property="og:url" content="{{page.url}}">
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+	<!-- @see dev.twitter.com/docs/cards -->
+	<meta property="twitter:title" content="{{page.name}}">
+	<meta property="twitter:creator" content="@{{page.twitterID}}">
+	<meta property="twitter:card" content="summary">
+	<meta property="twitter:description" content="{{page.description}}">
+	<meta property="twitter:url" content="{{page.url}}">
+</head>
+<body>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<div class="main wrapper">
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+	<header class="page-head">
+		<h1 class="site-name"><a href="{{page.url}}" rel="index">{{page.name}}</a></h1>
+		<h2 class="site-tagline">{{page.tagline}}</h2>
+	</header>
+	<!-- /.page-head -->
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+	<div class="share">
+		<!-- @see ghbtns.com -->
+		<iframe src="http://ghbtns.com/github-btn.html?user={{page.githubID}}&repo={{page.projectID}}&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="120" height="20"></iframe>
+		<iframe src="http://ghbtns.com/github-btn.html?user={{page.githubID}}&repo={{page.projectID}}&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="120" height="20"></iframe>
+		<!-- @see dev.twitter.com/docs/tweet-button -->
+		<a href="https://twitter.com/share" class="twitter-share-button" data-text="{{page.projectID}} - {{page.description}}" data-via="{{page.twitterID}}">Tweet</a>
+		<!-- @see dev.twitter.com/docs/follow-button -->
+		<a href="https://twitter.com/{{page.twitterID}}" class="twitter-follow-button" data-show-count="false">Follow @{{page.twitterID}}</a>
+	</div>
+	<!-- /.share -->
 
-<h3>Designer Templates</h3>
+	<h3><a href="#about" name="about">About</a></h3>
+	<p>
+		Write something about your project here.
+	</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+	<p class="cf">
+		<a class="btn btn--primary btn--half" href="https://github.com/{{page.githubID}}/{{page.projectID}}">View on GitHub</a>
+		<a class="btn btn--primary btn--half" href="https://github.com/{{page.githubID}}/{{page.projectID}}/zipball/master">Download</a>
+	</p>
 
-<h3>Rather Drive Stick?</h3>
+	<!-- @see rawgithub.com -->
+	<h3><a href="#demo" name="demo">Demo</a></h3>
+	<p>
+		Here you can show an example of your project.
+	</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+	<h3><a href="#usage" name="usage">Usage</a></h3>
+	<p>
+		Here're some code samples:
+	</p>
 
-<h3>Authors and Contributors</h3>
+	<b>HTML:</b>
+	<!-- Info: HTML is escaped using JS -->
+	<!-- Info: add "linenums" class for pre tag to add line numbers -->
+	<pre class="prettyprint"><code><form action="/">
+	<label for="input:message">Message:</label>
+	<input type="text" id="input:message" name="message">
+</form></code></pre>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+	<b>CSS:</b>
+	<pre class="prettyprint"><code>.page-head {
+	padding: 2em 0;
+	border-bottom: 1px solid #efefef;
+}</code></pre>
 
-<h3>Support or Contact</h3>
+	<b>JS:</b>
+	<pre class="prettyprint"><code>function array_flip (trans) {
+  var key, tmp_ar = {};
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+  if (trans && typeof trans=== 'object' && trans.change_key_case) {
+    return trans.flip();
+  }
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Garuda maintained by <a href="https://github.com/Idered">Idered</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+  for (key in trans) {
+    if (!trans.hasOwnProperty(key)) {continue;}
+    tmp_ar[trans[key]] = key;
+  }
 
-    
+  return tmp_ar;
+}</code></pre>
 
-  </body>
+	<h3><a href="#settings" name="settings">Settings</a></h3>
+	<dt><span>optionName</span> <code>values</code></dt>
+	<dd><p>Option description</p></dd>
+
+	<dt><span>anotherOption</span> <code>values</code></dt>
+	<dd><p>Option description</p></dd>
+
+	<h3><a href="#license" name="license">License</a></h3>
+	<p><b>MIT Licensing</b></p>
+	<p>Copyright (c) 2013 {{page.author}}</p>
+	<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+	<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+	<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+	<!-- @see branch.com -->
+	<div class="discussion">
+		<h3><a name="discussion" href="#discussion">Discussion</a></h3>
+		<p>Have a question, feedback or just want to say thanks? Go on :)</p>
+
+		<script type="text/javascript" src="http://embed-script.branch.com/assets/embed/embed.m.js?body=0" data-branch-embedid="{{page.branchID}}" ></script>
+	</div>
+	<!-- /.discussion -->
+
+</div>
+<!-- /.main  -->
+
+<script>
+	var scripts = {
+		'twitter-wjs'   : '//platform.twitter.com/widgets.js',
+		'analytics'     : ('https:'==location.protocol?'//ssl':'//www') + '.google-analytics.com/ga.js'
+	}, script, _gaq=[['_setAccount','{{page.googleAnalyticsID}}'],['_trackPageview']];
+
+	for (var id in scripts) {
+		script = document.createElement('script'); script.src = scripts[id];
+		script.id = id;script.type = 'text/javascript'; script.async = true;
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+	}
+</script>
+<script src="_ui/js/jquery.js"></script>
+<script src="_ui/js/plugins.js"></script>
+<script src="_ui/js/script.js"></script>
+</body>
 </html>
